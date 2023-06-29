@@ -11,7 +11,7 @@
   
   <title>
     
-      GitHub托管hexo出现的问题 
+      面试 
       
       
       |
@@ -143,23 +143,60 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">GitHub托管hexo出现的问题</div>
+      <div class="post-title">面试</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2023-06-28 13:14:03
+          2023-06-29 09:35:23
         </span>
         
       </div>
       <div class="markdown-body">
-        <h2 id="问题一：Something-39-s-wrong-Maybe-you-can-find-the-solution-here"><a href="#问题一：Something-39-s-wrong-Maybe-you-can-find-the-solution-here" class="headerlink" title="问题一：Something&#39;s wrong. Maybe you can find the solution here"></a>问题一：<code>Something&#39;s wrong. Maybe you can find the solution here</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 首先删除.deploy_git文件夹</span></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 然后执行之下的命令</span></span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+        <h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><ul>
+<li>应用层        HTTP,TFTP,FTP,NFS,WAIS,SMTP         为应用程序提供网络</li>
+<li>表示层        Telnet,Rlogin,SNMP,Gopher           数据格式化，加密，解密</li>
+<li>会话层        SMTP,DNS                            建立，维护，管理会话连接</li>
+<li>传输层        TCP,UDP                             建立，维护，管理端到端连接</li>
+<li>网络层        IP,ICMP,ARP,RARP,AKP,UUCP           IP寻址和路由选择</li>
+<li>数据链路层    FDDI,Ethernet,Arpanet,PDN,SLIP,PPP   控制网络层与物理层之间通信</li>
+<li>物理层        IEEE 802.1A,IEEE802.2到IEEE 802.11   比特流传输</li>
+</ul>
+<h2 id="TCP-x2F-IP模型"><a href="#TCP-x2F-IP模型" class="headerlink" title="TCP&#x2F;IP模型"></a>TCP&#x2F;IP模型</h2><ul>
+<li>应用层                包含OSI的应用层，表示层，会话层</li>
+<li>传输层                包含OSI传输层</li>
+<li>网络层                包含OSI网络层</li>
+<li>数据链路层            包含OSI数据链路层，物理层</li>
+</ul>
+<h2 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h2><ol>
+<li><p>TCP 是面向连接的协议，UDP 是无连接协议<br>TCP 发送数据前使用三次握手建立连接，UDP 发送数据前不需要建立连接。</p>
+</li>
+<li><p>TCP 可靠，UDP 不可靠<br>TCP 丢包会自动重传，UDP 不会(任何必需的可靠性必须由应用层来提供)。 TCP 可靠性由三个机制保证：1. 序号（TCP 报文的序号）2. 确认（ACK 机制）3. 重传（超时或者冗余的 ACK）</p>
+</li>
+<li><p>TCP 有序，UDP 无序<br>消息在传输过程中可能会乱序，后发送的消息可能会先到达，TCP 会对其进行重新排序，UDP 不会。</p>
+</li>
+</ol>
+<p>4.TCP 无界，UDP 有界<br>TCP 通过字节流传输，UDP 中每一个包都是单独的。</p>
+<ol start="5">
+<li><p>TCP 有流量控制（拥塞控制），UDP 没有<br>TCP 协议的流量控制是基于滑窗协议实现的。 拥塞控制和流量控制不同，流量控制是点对点的通信量抑制，抑制发送端发送速率，使得接收端来得及接收。</p>
+</li>
+<li><p>TCP 传输慢，UDP 传输快；<br>因为 TCP 需要建立连接、保证可靠性和有序性，所以比较耗时。 这就是为什么视频流、广播电视、在线多媒体游戏等选择使用 UDP。</p>
+</li>
+<li><p>TCP 是重量级的，UDP 是轻量级的<br>TCP 要建立连接、保证可靠性和有序性，就会传输更多的信息，如 TCP 的包头比较大。</p>
+</li>
+<li><p>TCP 的 头部比 UDP 大</p>
+</li>
+</ol>
+<h2 id="路由网络协议"><a href="#路由网络协议" class="headerlink" title="路由网络协议"></a>路由网络协议</h2><ul>
+<li>内部网关协议 IGP:在一个自治的系统内部运行，常见的IGP协议包括RIP,OSPF,IS-IS</li>
+<li>外部网关协议 EGP:运行于不同自治系统之间，BGP是目前最常用的EGP协议</li>
+</ul>
 
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2023/06/02/hello-world/" target="_self">
+              <a href="/2023/06/02/GitHub%E6%89%98%E7%AE%A1hexo%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
                 <span>上一页</span>
               </a>
@@ -168,16 +205,11 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2023-06-28 13:14:03
+              2023-06-29 09:35:23
             </span>
             
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2023/06/29/%E9%9D%A2%E8%AF%95/" target="_self">
-                <span>下一页</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
@@ -191,7 +223,7 @@
     <div class="title">目录</div>
     <div class="catalog-content">
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E4%B8%80%EF%BC%9ASomething-39-s-wrong-Maybe-you-can-find-the-solution-here"><span class="toc-text">问题一：Something&#39;s wrong. Maybe you can find the solution here</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI七层模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP-x2F-IP%E6%A8%A1%E5%9E%8B"><span class="toc-text">TCP&#x2F;IP模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E5%92%8CUDP"><span class="toc-text">TCP和UDP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE"><span class="toc-text">路由网络协议</span></a></li></ol>
       
     </div>
   </div>
@@ -287,12 +319,12 @@
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + GitHub%E6%89%98%E7%AE%A1hexo%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98 + '&url=' + https%3A%2F%2Fkaichundaily.github.io%2F2023%2F06%2F02%2FGitHub%25E6%2589%2598%25E7%25AE%25A1hexo%25E5%2587%25BA%25E7%258E%25B0%25E7%259A%2584%25E9%2597%25AE%25E9%25A2%2598%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E9%9D%A2%E8%AF%95 + '&url=' + https%3A%2F%2Fkaichundaily.github.io%2F2023%2F06%2F29%2F%25E9%259D%25A2%25E8%25AF%2595%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://kaichundaily.github.io/2023/06/02/GitHub%E6%89%98%E7%AE%A1hexo%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://kaichundaily.github.io/2023/06/29/%E9%9D%A2%E8%AF%95/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
